@@ -1,0 +1,19 @@
+<h2>Registriraj se!</h2>
+<mat-card>
+  <form (submit)="onAddInfo(infoForm)" #infoForm="ngForm">
+    <mat-form-field>
+      <input matInput type="text" name="imeIPrezime" placeholder="Ime i Prezime" ngModel>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput type="text" name="mjestoRadova" placeholder="Mjesto odrzavanja radova" ngModel>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput ngModel type="text" name="email" placeholder="email">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit">Save Post</button>
+  </form>
+</mat-card>
+<app-registrirani-korisnici></app-registrirani-korisnici>

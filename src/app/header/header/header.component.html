@@ -1,0 +1,22 @@
+
+
+<mat-toolbar color="primary">
+  <span>Trazim Majstora</span>
+  <span class="nav-spacer"></span>
+
+  <a *ngIf="router.url !== '/oAutoru'" mat-button routerLink="/oautoru" class="toolbarHover"><span>oAutoru</span></a>
+  <div class="container d-flex justify-content-end">
+    <a *ngIf="router.url !== '/index' " mat-button routerLink="/index" class="toolbarHover"><span>Pocetna</span></a>
+    <div class="marginaKorisnik">
+      <span style="font-size: small;">Korisnik:</span>
+    </div>
+    <div class="toolbarHover">
+      <button mat-button [matMenuTriggerFor]="menu"><span>Ime i Prezime</span></button>
+    </div>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item><a *ngIf="router.url !== '/zatrazeniposlovima'" mat-button routerLink="/zatrazeniposlovima" class="toolbarHover2"><span>Moj Profil</span></a></button>
+      <button mat-menu-item> Odjavi se</button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
+

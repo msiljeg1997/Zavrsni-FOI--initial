@@ -1,0 +1,14 @@
+
+  <table>
+    <tr>
+      <th>Ime i Prezime</th>
+      <th>Mjesto održavanja radova</th>
+      <th>e-mail</th>
+    </tr>
+    <tr *ngFor="let info of infos">
+        <td>{{info.imeIPrezime}}</td>
+        <td>{{info.mjesto}}</td>
+        <td>{{info.email}}</td>
+    </tr>
+
+  </table>

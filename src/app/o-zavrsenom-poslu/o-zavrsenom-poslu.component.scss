@@ -1,0 +1,64 @@
+#photoArray{
+    display: grid;
+    grid-gap: .5em;
+    grid-template-areas: 
+    "photoOne photoTwo photoThree"
+    "photoOne photoFour photoFFive";
+    grid-template-columns: 1fr 20% 20%;
+}
+#photoArray > div {
+border: 2px solid #eee;
+border-radius: 5px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+#photoArray > div:first-child {
+    grid-area: photoOne;
+    height: 450px;
+}
+#container{
+     margin:60px 50px 50px 50px;
+     display: inline-block;
+}
+.slikeGalerija{
+    max-width: 100%;
+    max-height: 100%;
+}
+#photoArray > div img {
+    visibility:hidden ;
+
+
+}
+
+#photoArray > div :hover{
+    background-color: rgb(50, 150, 225);
+
+}
+.pSlike{
+    background-color: #eee;
+    opacity: 70%;
+}
+
+.majstor{
+    width: fit-content;
+}
+
+.opisPosla{
+    border: rgb(128, 96, 96);
+    border-style: solid;
+    border-radius: 10%;
+    background-color: rgba(238, 238, 238, 0.56);
+    margin: 10px;
+}
+
+.napomenaPosla{
+    border: rgb(128, 96, 96);
+    border-style: solid;
+    border-radius: 10%;
+    background-color: rgba(238, 238, 238, 0.56);
+    margin: 10px;
+}
+
